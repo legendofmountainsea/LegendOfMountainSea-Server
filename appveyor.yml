@@ -15,14 +15,10 @@ install:
   - ps: Install-Product node 9.2.0 x64
   # install modules
   - npm install
-  - npm run build-win
+  - npm run build
 
 # Post-install test scripts.
 test_script:
-  - cd ../LOMS
-  - npm test
-
-  - cd ../LOMS-Server
   - npm test
 
 after_test:
