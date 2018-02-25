@@ -18,13 +18,8 @@ $ npm install -g windows-build-tools
 ```
 
 ## Getting started
-**Run game on web browser without NW.js Client**
 ```
-$ loms run-dev
-```
-**Run game on Windows or macOS with NW.js Client**
-```
-$ loms run-client
+$ loms run-server
 ```
 
 ## Requirement
