@@ -1,0 +1,38 @@
+# Test against the latest version of this Node.js version
+environment:
+  nodejs_version: "9"
+
+notifications:
+  - provider: Webhook
+    url: https://webhooks.gitter.im/e/8ce99a6f190e2c70eea7
+    on_build_success: false
+    on_build_failure: true
+    on_build_status_changed: true
+
+# Install scripts. (runs after repo cloning)
+install:
+  # Get the latest stable version of Node.js or io.js
+  - ps: Install-Product node 9.2.0 x64
+  # install modules
+  - npm install
+  - npm run build-win
+
+# Post-install test scripts.
+test_script:
+  - cd ../LOMS
+  - npm test
+
+  - cd ../LOMS-Server
+  - npm test
+
+after_test:
+  - npm install --save-dev istanbul@1.1.0-alpha.1
+  - npm install --save-dev codecov
+  - ./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha -- test/**/*.test.js -R spec --compilers js:babel-register
+  - ./node_modules/.bin/codecov
+
+cache:
+  - node_modules -> package.json
+
+# Don't actually build.
+build: off
