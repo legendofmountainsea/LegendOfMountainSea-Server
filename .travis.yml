@@ -8,7 +8,7 @@ notifications:
 language: node_js
 os: osx
 node_js:
-  - "9"
+  - "10"
 install:
   - npm install
   - npm run build
@@ -25,7 +25,7 @@ script:
 after_script:
   - npm install --save-dev mocha-lcov-reporter
   - npm install --save-dev istanbul@1.1.0-alpha.1
-  - ./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha -- test/**/*.test.js -R mocha-lcov-reporter --compilers js:babel-register
+  - ./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha -- test/**/*.test.js -R mocha-lcov-reporter --require @babel/register
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
 
 cache:

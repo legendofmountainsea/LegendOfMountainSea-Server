@@ -1,31 +1,55 @@
 {
-  "name": "legend_of_mountain_sea_server",
+  "name": "loms.server",
   "version": "0.0.1",
   "author": "TyrealGray",
   "license": "GPL-2.0",
+  "main": "./bin/LOMSServer.js",
   "scripts": {
-    "test": "mocha test/**/*.test.js --compilers js:babel-register && npm run lint && npm run build",
-    "server": "node script/dev",
-    "build": "babel ./src -s -d bin",
+    "build": "babel ./src -d bin --copy-files",
+    "dev": "webpack-dev-server --open --config config/webpack.config.js",
+    "doc": "./node_modules/.bin/jsdoc src -c ./docs/jsdoc.json -t ./node_modules/@pixi/jsdoc-template -R README.md -r -d docs",
+    "flow": "flow",
     "lint": "eslint ./src",
-    "lint-fix": "eslint ./src --fix"
+    "lint-fix": "eslint ./src --fix",
+    "server": "node script/devServer.js",
+    "test": "mocha test/**/*.test.js --require @babel/register && npm run lint && npm run build"
+  },
+  "homepage": "https://github.com/SkyHarp/LegendOfMountainSea-Server#readme",
+  "prettier": {
+    "useTabs": true,
+    "tabWidth": 4,
+    "singleQuote": true,
+    "trailingComma": "all",
+    "bracketSpacing": true,
+    "arrowParens": "always",
+    "parser": "flow"
   },
   "devDependencies": {
-    "babel-cli": "6.26.0",
-    "babel-eslint": "8.0.1",
-    "babel-plugin-transform-class-properties": "6.24.1",
-    "babel-plugin-transform-object-rest-spread": "6.26.0",
-    "babel-preset-env": "1.6.0",
-    "babel-register": "6.26.0",
+    "@babel/cli": "7.1.2",
+    "@babel/core": "7.1.2",
+    "@babel/plugin-proposal-class-properties": "7.1.0",
+    "@babel/plugin-proposal-object-rest-spread": "7.0.0",
+    "@babel/polyfill": "7.0.0",
+    "@babel/preset-env": "7.1.0",
+    "@babel/preset-flow": "7.0.0",
+    "@babel/register": "7.0.0",
+    "@pixi/jsdoc-template": "2.4.0",
+    "babel-eslint": "9.0.0",
+    "babel-loader": "8.0.4",
+    "core-js": "2.5.7",
     "eslint": "4.9.0",
     "expect.js": "0.3.1",
-    "mocha": "3.5.3"
+    "flow-bin": "0.84.0",
+    "jsdoc": "3.5.5",
+    "jsdoc-babel": "0.5.0",
+    "mocha": "5.1.1",
+    "prettier": "1.14.2",
+    "webpack": "4.22.0",
+    "webpack-cli": "3.1.2",
+    "webpack-dev-server": "3.1.9"
   },
   "dependencies": {
-    "ws": "3.2.0"
-  },
-  "optionalDependencies": {
-    "bufferutil": "3.0.2",
-    "utf-8-validate": "3.0.3"
+    "colyseus": "0.9.17",
+    "colyseus.js": "0.9.15"
   }
 }
