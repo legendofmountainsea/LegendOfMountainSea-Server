@@ -25,7 +25,7 @@ $ npm install
 ```
 - Windows might get `node-gyp rebuild` error, open Powershell as admin and run
 ```
-$ npm install -g windows-build-tools
+$ npm i -g --prodution --vs2015 --add-python-to-path windows-build-tools
 ```
 
 ## Getting started
