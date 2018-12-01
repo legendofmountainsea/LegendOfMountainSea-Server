@@ -8,11 +8,12 @@ type LOMSServerPropsType = {
     port?: number;
 }
 
-export default class LOMSServer {
+class LOMSServer {
     _isStart: boolean;
     _port: number;
     _httpServer: http.Server;
     _gameServer: Server;
+
     constructor(props: LOMSServerPropsType){
         this._isStart = false;
         this._port = props.port || 1126;
@@ -33,6 +34,7 @@ export default class LOMSServer {
         } catch (e) {
             console.log(e);
         }
-
     }
 }
+
+export default LOMSServer;
