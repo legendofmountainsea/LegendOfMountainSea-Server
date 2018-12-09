@@ -37,4 +37,4 @@ class LOMSServer {
     }
 }
 
-export default LOMSServer;
+export {LOMSServer};

@@ -1,6 +1,6 @@
 {
   "name": "loms.server",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "TyrealGray",
   "license": "GPL-2.0",
   "main": "./bin/LOMSServer.js",
