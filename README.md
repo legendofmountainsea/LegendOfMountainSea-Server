@@ -9,7 +9,7 @@ A server for game LegendOfMountainSea
 [![Maintainability](https://api.codeclimate.com/v1/badges/66cdcc990c9b76379605/maintainability)](https://codeclimate.com/github/SkyHarp/LegendOfMountainSea-Server/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/66cdcc990c9b76379605/test_coverage)](https://codeclimate.com/github/SkyHarp/LegendOfMountainSea-Server/test_coverage)
 [![Build Status](https://img.shields.io/travis/SkyHarp/LegendOfMountainSea-Server/master.svg?style=flat-square&logo=travis&label=osx)](https://travis-ci.org/SkyHarp/LegendOfMountainSea-Server)
-[![AppVeyor branch](https://img.shields.io/appveyor/ci/TyrealGray/legendofmountainsea-server/master.svg?style=flat-square&logo=appveyor&label=win)](https://ci.appveyor.com/project/TyrealGray/legendofmountainsea-server)
+[![AppVeyor branch](https://img.shields.io/appveyor/ci/TyrealGray/legendofmountainsea-server/master.svg?style=flat-square&logo=appveyor&label=win)](https://ci.appveyor.com/project/TyrealGray/legendofmountainsea-server) [![Greenkeeper badge](https://badges.greenkeeper.io/SkyHarp/LegendOfMountainSea-Server.svg)](https://greenkeeper.io/)
 
 ## Installing
 
