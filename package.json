@@ -51,6 +51,6 @@
   },
   "dependencies": {
     "colyseus": "0.10.6",
-    "colyseus.js": "0.10.4"
+    "colyseus.js": "0.10.5"
   }
 }
