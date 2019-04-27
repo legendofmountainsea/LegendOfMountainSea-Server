@@ -50,7 +50,7 @@
     "webpack-dev-server": "3.3.1"
   },
   "dependencies": {
-    "colyseus": "0.10.6",
+    "colyseus": "0.10.7",
     "colyseus.js": "0.10.5"
   }
 }
