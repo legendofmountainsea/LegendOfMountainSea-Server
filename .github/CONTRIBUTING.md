@@ -7,7 +7,7 @@ If you find an [issues](https://github.com/SkyHarp/LegendOfMountainSea-Server/is
 Take a look at the features requested by others in the community and consider opening a pull request if you see something you want to work on.
 
 ## Community
-We welcome the non-technical discussions, share your idea with us at [loms.space](https://loms.space/).
+We welcome the non-technical discussions, share your idea with us at [loms.space](https://gitter.im/SkyHarp/LegendOfMountainSea/).
 
 ## Code of Conduct
 SkyHarp has a [Code of Conduct](https://github.com/SkyHarp/LegendOfMountainSea-Server/blob/master/.github/CODE_OF_CONDUCT.md) that all contributors are expected to follow. This code describes the minimum behavior expectations for all contributors.
