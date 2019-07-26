@@ -3,13 +3,6 @@ environment:
   matrix:
   - nodejs_version: 10
 
-notifications:
-  - provider: Webhook
-    url: https://webhooks.gitter.im/e/8ce99a6f190e2c70eea7
-    on_build_success: false
-    on_build_failure: true
-    on_build_status_changed: true
-
 platform: x64
 
 # Install scripts. (runs after repo cloning)

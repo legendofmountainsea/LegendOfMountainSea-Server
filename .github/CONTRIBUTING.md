@@ -1,16 +1,15 @@
 ## Contributing to LegendOfMountainSea-Server
-There's a number of ways you can get involved, and we need volunteer to help this game come to fruition.
+There's a number of ways you can get involved, and we need volunteer to help this game come to fruition. If you are:
 
-### Issues
-If you find an [issues](https://github.com/SkyHarp/LegendOfMountainSea-Server/issues) you would like to fix, open a pull request. Issues tagged as Good first issue are a good place to get started.
+###  a developer
+If you find an [issues](https://github.com/legendofmountainsea/LegendOfMountainSea-Server/issues) you would like to fix, open a pull request. Issues tagged as Good first issue are a good place to get started.
+
 
 Take a look at the features requested by others in the community and consider opening a pull request if you see something you want to work on.
 
-## Community
-We welcome the non-technical discussions, share your idea with us at [loms.space](https://gitter.im/SkyHarp/LegendOfMountainSea/).
 
 ## Code of Conduct
-SkyHarp has a [Code of Conduct](https://github.com/SkyHarp/LegendOfMountainSea-Server/blob/master/.github/CODE_OF_CONDUCT.md) that all contributors are expected to follow. This code describes the minimum behavior expectations for all contributors.
+LOMS has a [Code of Conduct](https://github.com/legendofmountainsea/LegendOfMountainSea-Server/blob/master/.github/CODE_OF_CONDUCT.md) that all contributors are expected to follow. This code describes the minimum behavior expectations for all contributors.
 
 ## Sending a pull request
 Small pull requests are much easier to review and more likely to get merged. Make sure the PR does only one thing, otherwise please split it.
@@ -39,4 +38,4 @@ All pull requests should be opened against the `master` branch. After opening yo
 - Prefer `if(boolean){ func(); };` over `if(boolean) func();`
 
 # License
-By contributing to LegendOfMountainSea-Server, you agree that your contributions will be licensed under its GPL-2.0 license.
+By contributing to LegendOfMountainSea, you agree that your contributions will be licensed under its GPL-2.0 license.

@@ -11,7 +11,7 @@
     "flow": "flow",
     "lint": "eslint ./src",
     "lint-fix": "eslint ./src --fix",
-    "start": "nodemon script/devServer.js",
+    "server": "nodemon script/devServer.js",
     "test": "mocha test/**/*.test.js --require @babel/register && npm run lint && npm run build"
   },
   "homepage": "https://github.com/SkyHarp/LegendOfMountainSea-Server#readme",
