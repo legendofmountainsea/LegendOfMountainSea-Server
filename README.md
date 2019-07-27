@@ -39,7 +39,7 @@ Node.js **version 10.0.0 or higher**
 LegendOfMountainSea welcomes all contributions from anyone willing to work in good faith both with other contributors and with the community.
 
 No contribution is too small and all contributions are valued.
-[Contributing to LegendOfMountainSea-Server](https://github.com/SkyHarp/LegendOfMountainSea-Server/blob/master/.github/CONTRIBUTING.md)
+[Contributing to LegendOfMountainSea-Server](https://github.com/legendofmountainsea/LegendOfMountainSea-Server/blob/master/.github/CONTRIBUTING.md)
 
 ## License
 GPL-2.0
